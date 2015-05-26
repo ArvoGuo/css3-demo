@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<style>
+  .menu label {
+    border: 1px solid #000;
+    display: inline-block;
+    width: 200px;
+    min-height: 20px;
+    vertical-align: middle;
+    cursor: pointer;
+  }
+  .menu input[type=checkbox] {
+    display: none;
+  }
+  .menu-sub {
+    margin: 0 0 5px 5px;
+    height: 0px;
+    overflow: hidden;
+
+  }
+  input[type=checkbox]:checked ~ .menu-sub  {
+    height: auto;
+  }
+</style>
+<body>
+
+  <div class="menu">
+
+    <label for="c1">菜单1</label>
+    <input type="checkbox" id="c1">
+    <div class="menu-sub">
+      <label for="c1-1">菜单1-1</label>
+      <input type="checkbox" id="c1-1">
+      <div class="menu-sub">
+        <label for="c1-1-1">菜单1-1-1</label>
+        <input type="checkbox" id="c1-1-1">
+      </div>
+      <div class="menu-sub">
+        <label for="c1-1-2">菜单1-1-2</label>
+        <input type="checkbox" id="c1-1-2">
+      </div>
+    </div>
+    <div class="menu-sub">
+      <label for="c1-2">菜单1-2</label>
+      <input type="checkbox" id="c1-2">
+      <div class="menu-sub">
+        <label for="c2-1-1">菜单2-1-1</label>
+        <input type="checkbox" id="c2-1-1">
+      </div>
+      <div class="menu-sub">
+        <label for="c2-1-2">菜单2-1-2</label>
+        <input type="checkbox" id="c2-1-2">
+      </div>
+    </div>
+    <div class="menu-sub">
+      <label for="c1-3">菜单1-3</label>
+      <input type="checkbox" id="c1-3">
+      <div class="menu-sub">
+        <label for="c3-1-1">菜单3-1-1</label>
+        <input type="checkbox" id="c3-1-1">
+      </div>
+      <div class="menu-sub">
+        <label for="c3-1-2">菜单3-1-2</label>
+        <input type="checkbox" id="c3-1-2">
+      </div>
+    </div>
+  </div>
+
+
+
+</body>
+</html>
